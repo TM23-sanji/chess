@@ -1,6 +1,7 @@
-// lib/api.ts
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 export async function fetchBestMove(fen: string): Promise<string> {
-  const res = await fetch('http://127.0.0.1:8000/best-move', {
+  const res = await fetch(`${BACKEND_URL}/best-move`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

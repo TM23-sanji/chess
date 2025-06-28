@@ -12,3 +12,6 @@ backend/stockfish/stockfish.exe
 # OS
 .DS_Store
 Thumbs.db
+
+# Next.js env files
+frontend/.env*
