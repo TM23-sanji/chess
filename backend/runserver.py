@@ -1,5 +1,6 @@
 import sys
 import asyncio
+from main import app
 
 if sys.platform.startswith('win'):
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
