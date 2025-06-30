@@ -14,11 +14,12 @@ class BestMoveRequest(BaseModel):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://chess-bice-eta.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.api_route("/", methods=["GET", "HEAD"])
 def read_root():
