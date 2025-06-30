@@ -14,7 +14,7 @@ class BestMoveRequest(BaseModel):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chess-bice-eta.vercel.app"],
+    allow_origins=["https://ulosechess.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
