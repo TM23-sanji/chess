@@ -20,6 +20,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"status": "ok"}
+
 @app.post("/best-move")
 def best_move(request: BestMoveRequest):
     stockfish.set_fen_position(request.fen)

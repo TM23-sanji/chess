@@ -13,4 +13,4 @@ RUN chmod +x bin/stockfish
 # Add it to PATH if you want
 ENV PATH="/app/bin:${PATH}"
 
-CMD ["uvicorn", "runserver:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
